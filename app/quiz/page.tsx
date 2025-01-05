@@ -204,7 +204,16 @@ const Quiz = () => {
           )}
 
           {currentQuestionIndex < quizQuestions.length - 1 ? (
-            <button onClick={handleNext} className='button'>
+            <button
+              onClick={handleNext}
+              className='button'
+              style={
+                userAnswers[currentQuestionIndex] === null
+                  ? { opacity: 0.5 }
+                  : {}
+              }
+              disabled={userAnswers[currentQuestionIndex] === null}
+            >
               Next
             </button>
           ) : (
