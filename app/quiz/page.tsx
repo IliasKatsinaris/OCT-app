@@ -65,7 +65,7 @@ const Quiz = () => {
   if (isWelcome) {
     return (
       <div className='container'>
-        <div className='welcomeCard'>
+        <div className='welcomeCard bg-background'>
           <h1 className='title'>Welcome to the Retina / OCT Quiz!</h1>
           <p style={{ marginBottom: '20px' }}>
             Test your knowledge about retinal physiology, OCT technology, and
@@ -155,8 +155,8 @@ const Quiz = () => {
   const currentQuestion = quizQuestions[currentQuestionIndex];
 
   return (
-    <div className='container'>
-      <div className='card'>
+    <div className='container '>
+      <div className='card bg-background'>
         <h1 className='title'>Retina / OCT Quiz</h1>
 
         <div className='questionSection'>
@@ -174,7 +174,9 @@ const Quiz = () => {
                 key={index}
                 // Add an extra class if it's selected
                 className={
-                  isSelected ? 'answerOption answerSelected' : 'answerOption'
+                  isSelected
+                    ? 'answerOption answerSelected bg-background'
+                    : 'answerOption bg-background'
                 }
               >
                 <input
