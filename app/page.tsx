@@ -6,17 +6,18 @@ export default function Home() {
   return (
     <div className='flex sm:min-h-[85.5vh] min-h-[85vh] flex-col items-center justify-center text-center px-2 sm:py-8 py-12'>
       <h1 className='text-3xl font-bold mb-4 sm:text-6xl'>
-        Welcome to my diploma paper
+        Dive Into the World of Optical Coherence Tomography
       </h1>
       <p className='mb-8 sm:text-lg max-w-[800px] text-muted-foreground'>
-        This paper is about the implementation of a web-based quiz application
+        A Digital Educational Platform to Understand OCT and Self-Evaluate
+        Through Interactive Quizzes
       </p>
       <div className='flex flex-row items-center gap-5'>
         <Link
           href={`/docs${page_routes[0].href}`}
           className={buttonVariants({ className: 'px-6', size: 'lg' })}
         >
-          Read paper
+          Learn About OCT
         </Link>
         <Link
           href='/quiz'
@@ -26,7 +27,7 @@ export default function Home() {
             size: 'lg',
           })}
         >
-          Get the quiz
+          Start quiz
         </Link>
       </div>
     </div>
