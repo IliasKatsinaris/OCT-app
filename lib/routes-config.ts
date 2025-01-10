@@ -18,9 +18,63 @@ export const ROUTES: EachRoute[] = [
         title: 'Eye Anatomy',
         href: '/eye-anatomy',
       },
+      {
+        title: 'Eye Physiology',
+        href: '/eye-physiology',
+      },
     ],
   },
-
+  {
+    title: 'Chapter 2',
+    href: '/chapter-2',
+    noLink: true,
+    items: [
+      {
+        title: 'What is Optical Coherence Tomography (OCT)',
+        href: '/oct',
+      },
+      {
+        title: 'Physical Principles of Operation of OCT',
+        href: '/principles-of-oct',
+      },
+      {
+        title: 'Overview of OCT Systems and Methods',
+        href: '/overview-of-oct',
+      },
+      {
+        title: 'Medical Applications',
+        href: '/medical-applications',
+      },
+    ],
+  },
+  {
+    title: 'Chapter 3',
+    href: '/chapter-3',
+    noLink: true,
+    items: [
+      {
+        title: 'Eye Diseases with OCT Images',
+        href: '/eye-diseases',
+      },
+    ],
+  },
+  {
+    title: 'Chapter 4',
+    href: '/chapter-4',
+    noLink: true,
+    items: [
+      {
+        title: 'Development of the educational application',
+        href: '/development',
+      },
+      {
+        title: 'Methods and technologies',
+        href: '/methods',
+      },
+      { title: 'Code', href: '/code' },
+      { title: 'Vercel Application', href: '/vercel' },
+    ],
+  },
   // { title: 'Quick Start Guide', href: '/quick-start-guide' },
   // {
   //   title: 'Project Structure',

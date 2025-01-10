@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { questionsData } from './questionsData';
 import '../../styles/quiz.css';
 
-const NUMBER_OF_QUESTIONS = 30;
+const NUMBER_OF_QUESTIONS = 10;
 
 const Quiz = () => {
   const [isWelcome, setIsWelcome] = useState(true);
@@ -111,7 +111,7 @@ const Quiz = () => {
 
     return (
       <div className='container'>
-        <div className='resultsCard'>
+        <div className='resultsCard bg-background'>
           <h1 className='title'>Quiz Results</h1>
           <p>
             You answered <strong>{correctCount}</strong> correctly and{' '}
