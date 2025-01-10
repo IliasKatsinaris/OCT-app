@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { questionsData } from './questionsData';
 import '../../styles/quiz.css';
 
-const NUMBER_OF_QUESTIONS = 10;
+const NUMBER_OF_QUESTIONS = 30;
 
 const Quiz = () => {
   const [isWelcome, setIsWelcome] = useState(true);
