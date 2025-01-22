@@ -1,15 +1,15 @@
-import { EachRoute } from "@/lib/routes-config";
-import Anchor from "./anchor";
+import { EachRoute } from '@/lib/routes-config';
+import Anchor from './anchor';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { cn } from "@/lib/utils";
-import { SheetClose } from "@/components/ui/sheet";
-import { ChevronDown, ChevronRight } from "lucide-react";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+} from '@/components/ui/collapsible';
+import { cn } from '@/lib/utils';
+import { SheetClose } from '@/components/ui/sheet';
+import { ChevronDown, ChevronRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function SubLink({
   title,
@@ -28,7 +28,7 @@ export default function SubLink({
 
   const Comp = (
     <Anchor
-      activeClassName="text-primary dark:font-medium font-semibold"
+      activeClassName='text-primary dark:font-medium font-semibold'
       href={href}
     >
       {title}
@@ -42,24 +42,24 @@ export default function SubLink({
       Comp
     )
   ) : (
-    <h4 className="font-medium sm:text-sm text-primary">{title}</h4>
+    <h4 className='font-large text-primary text-left'>{title}</h4>
   );
 
   if (!items) {
-    return <div className="flex flex-col">{titleOrLink}</div>;
+    return <div className='flex flex-col'>{titleOrLink}</div>;
   }
 
   return (
-    <div className="flex flex-col gap-1 w-full">
+    <div className='flex flex-col gap-1 w-full'>
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-        <CollapsibleTrigger className="w-full pr-5">
-          <div className="flex items-center justify-between cursor-pointer w-full">
+        <CollapsibleTrigger className='w-full pr-5'>
+          <div className='flex items-center justify-between cursor-pointer w-full'>
             {titleOrLink}
             <span>
               {!isOpen ? (
-                <ChevronRight className="h-[0.9rem] w-[0.9rem]" />
+                <ChevronRight className='h-[0.9rem] w-[0.9rem]' />
               ) : (
-                <ChevronDown className="h-[0.9rem] w-[0.9rem]" />
+                <ChevronDown className='h-[0.9rem] w-[0.9rem]' />
               )}
             </span>
           </div>
@@ -67,8 +67,8 @@ export default function SubLink({
         <CollapsibleContent>
           <div
             className={cn(
-              "flex flex-col items-start sm:text-sm dark:text-stone-300/85 text-stone-800 ml-0.5 mt-2.5 gap-3",
-              level > 0 && "pl-4 border-l ml-1.5"
+              'flex flex-col items-start sm:text-sm dark:text-stone-300/85 text-stone-800 ml-4 mt-2.5 gap-3',
+              level > 0 && 'pl-4 border-l ml-1.5'
             )}
           >
             {items?.map((innerLink) => {

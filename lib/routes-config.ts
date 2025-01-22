@@ -10,7 +10,7 @@ export type EachRoute = {
 export const ROUTES: EachRoute[] = [
   { title: 'Introduction', href: '/introduction' },
   {
-    title: 'Chapter 1',
+    title: 'Ophthalmology',
     href: '/chapter-1',
     noLink: true,
     items: [
@@ -25,7 +25,7 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
-    title: 'Chapter 2',
+    title: 'Optical Coherence Tomography (OCT)',
     href: '/chapter-2',
     noLink: true,
     items: [
@@ -48,18 +48,11 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
-    title: 'Chapter 3',
-    href: '/chapter-3',
-    noLink: true,
-    items: [
-      {
-        title: 'Eye Diseases with OCT Images',
-        href: '/eye-diseases',
-      },
-    ],
+    title: 'Eye Diseases with OCT Images',
+    href: '/eye-diseases',
   },
   {
-    title: 'Chapter 4',
+    title: 'The educational application',
     href: '/chapter-4',
     noLink: true,
     items: [
@@ -71,9 +64,17 @@ export const ROUTES: EachRoute[] = [
         title: 'Methods and technologies',
         href: '/methods',
       },
-      { title: 'Code', href: '/code' },
-      { title: 'Vercel Application', href: '/vercel' },
+      { title: 'Vercel Application & Github Code', href: '/vercel' },
+      { title: 'Limitations', href: '/limitations' },
     ],
+  },
+  {
+    title: 'Acronyms',
+    href: '/acronyms',
+  },
+  {
+    title: 'References',
+    href: '/references',
   },
   // { title: 'Quick Start Guide', href: '/quick-start-guide' },
   // {
